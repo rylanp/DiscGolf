@@ -55,6 +55,16 @@ function sendContact(){
     }
 }
 function sendEmail(user){
-    alert("u")
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : 'discgolfscore2022@gmail.com',
+        From : "discgolfscore2022@gmail.com",
+        Subject : "New Form Submission at discgolf.rylanpaul.com",
+        Body : "Name: " + user.name + "\nEmail: " + user.email + "\nMessage: " + user.message
+    }).then(
+     message => alert(message)
+    );
 }
 
