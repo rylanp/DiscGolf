@@ -55,6 +55,7 @@ function sendContact(){
     }
 }
 function sendEmail(user){
+    // uses smtp.js
     Email.send({
         SecureToken : "c0105397-ade2-4353-96cb-d58f53197ef4",
         To : "discgolfscore2022@gmail.com",
