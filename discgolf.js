@@ -70,7 +70,7 @@ function sendEmail(user){
       message => alert(message + "\n" + user.name + ', thanks for the feedback!')
     );
     timer = 1
-    setTimeout(addTimer, 20000)
+    setTimeout(addTimer, 90000)
 }
 
 function addTimer(){
