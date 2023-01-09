@@ -48,7 +48,6 @@ class User {
 function sendContact(){
     if (isValid()) {
         let usr = new User(fields.name.value,  fields.email.value, fields.message.value);
-        alert(usr.name + ', thanks for the feedback!')
         sendEmail(usr)
     }else{
         alert('Error submitting feedback')
@@ -63,7 +62,7 @@ function sendEmail(user){
         Subject : "New Form Submission at discgolf.rylanpaul.com",
         Body : "Name: " + user.name + "<br>Email: " + user.email + "<br>Message: " + user.message
     }).then(
-      message => alert(message)
+      message => alert(message + "<br>" + user.name + ', thanks for the feedback!')
     );
 }
 
