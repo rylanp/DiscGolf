@@ -1,6 +1,7 @@
 
 
 var fields = {}
+var timer = 0
 document.addEventListener("DOMContentLoaded", function(){
     fields.name = document.getElementById("name");
     fields.email = document.getElementById("email");
@@ -55,6 +56,10 @@ function sendContact(){
 }
 function sendEmail(user){
     // uses smtp.js
+    if (timer > 0){
+        alert("You need to wait before submitting another email")
+        return
+    }
     Email.send({
         SecureToken : "c0105397-ade2-4353-96cb-d58f53197ef4",
         To : "discgolfscore2022@gmail.com",
@@ -64,5 +69,10 @@ function sendEmail(user){
     }).then(
       message => alert(message + "\n" + user.name + ', thanks for the feedback!')
     );
+    timer = 1
+    setTimeout(addTimer, 20000)
 }
 
+function addTimer(){
+   timer = 0
+}
