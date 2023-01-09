@@ -57,7 +57,7 @@ function sendContact(){
 function sendEmail(user){
     Email.send({
         SecureToken : "51e68b84-02fb-4087-8773-dd597e462d08",
-        To : 'discgolfscore2022@gmail.com',
+        To : "discgolfscore2022@gmail.com",
         From : "rylan@rylanpaul.com",
         Subject : "New Form Submission at discgolf.rylanpaul.com",
         Body : "Name: " + user.name + "<br>Email: " + user.email + "<br>Message: " + user.message
