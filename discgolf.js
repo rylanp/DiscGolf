@@ -56,15 +56,13 @@ function sendContact(){
 }
 function sendEmail(user){
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "discgolfscore2022@gmail.com",
-        Password : "61396199B81823E59DA970476F3B39A572B6",
+        SecureToken : "51e68b84-02fb-4087-8773-dd597e462d08",
         To : 'discgolfscore2022@gmail.com',
-        From : rylan@rylanpaul.com,
+        From : "rylan@rylanpaul.com",
         Subject : "New Form Submission at discgolf.rylanpaul.com",
         Body : "Name: " + user.name + "<br>Email: " + user.email + "<br>Message: " + user.message
     }).then(
-     message => alert(message)
+      message => alert(message)
     );
 }
 
