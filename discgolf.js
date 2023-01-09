@@ -57,12 +57,12 @@ function sendContact(){
 function sendEmail(user){
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "username",
-        Password : "password",
+        Username : "discgolfscore2022@gmail.com",
+        Password : "61396199B81823E59DA970476F3B39A572B6",
         To : 'discgolfscore2022@gmail.com',
-        From : "discgolfscore2022@gmail.com",
+        From : user.email,
         Subject : "New Form Submission at discgolf.rylanpaul.com",
-        Body : "Name: " + user.name + "\nEmail: " + user.email + "\nMessage: " + user.message
+        Body : "Name: " + user.name + "<br>Email: " + user.email + "<br>Message: " + user.message
     }).then(
      message => alert(message)
     );
