@@ -62,7 +62,7 @@ function sendEmail(user){
         Subject : "New Form Submission at discgolf.rylanpaul.com",
         Body : "Name: " + user.name + "<br>Email: " + user.email + "<br>Message: " + user.message
     }).then(
-      message => alert(message + "<br>" + user.name + ', thanks for the feedback!')
+      message => alert(message + "\n" + user.name + ', thanks for the feedback!')
     );
 }
 
