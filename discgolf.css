@@ -1,5 +1,6 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
+    font-size: 1.8vw;
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #b0c9dd; /* Gray border */
@@ -9,7 +10,6 @@ input[type=text], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
-  
   /* Style the submit button with a specific background color etc */
 button {
     background-color: #0075cf;
@@ -36,10 +36,20 @@ button {
     background-color: #acdbff;
     font-family: Arial, Verdana, sans-serif;
   }
+  label {
+    font-size: 1.8vw;
+  }
   #titletext {
     color: #ffffff;
     font-size: 5vw;
     font-weight: bolder;
     text-align: center;
+  }
+  .animatedscene{
+    background-color: rgba(0, 0, 0, 0.091);
+    text-align: center;
+    margin: auto;
+    padding: 12px;
+    border-radius: 20px;
   }
 
