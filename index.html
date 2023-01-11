@@ -11,7 +11,12 @@
 <body>
   <p id="titletext">Welcome to Disc Golf Score Tracker</p>
   <div class="animatedscene">
-    <img class="discgif" src="https://piskel-imgstore-b.appspot.com/img/0614483a-911d-11ed-ac11-57c6c3bb75e1.gif">
+    <picture class="discgif">
+      <source media="(min-width: 1100px)" srcset="https://piskel-imgstore-b.appspot.com/img/0614483a-911d-11ed-ac11-57c6c3bb75e1.gif">
+      <source media="(min-width: 100px)" srcset="https://piskel-imgstore-b.appspot.com/img/e2805c42-916c-11ed-99e2-ab74728c3da3.gif">
+      <img src="https://piskel-imgstore-b.appspot.com/img/0614483a-911d-11ed-ac11-57c6c3bb75e1.gif" alt="IfItDoesntMatchAnyMedia">
+
+    </picture>
   </div>
   <div class="container">
     <form onsubmit="sendContact(); reset; return false;">
@@ -34,9 +39,10 @@
         class="appicon"></a>
     <div class="icontext">
       <h1>Disc Golf Score Tracker<br><br></h1>
-      <h3>Check it out on the app store!<br><br>Click on the icon to download it</h3>
+      <h3>Check it out on the app store!<br><br>Click on the icon to view it</h3>
     </div>
   </div>
+  <p style="color: white;text-align: center;padding: 30px;">©2023 by Disc Golf Score Tracker</p>
   <script src="discgolf.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
