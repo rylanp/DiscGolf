@@ -62,8 +62,9 @@ button {
   @media (max-width: 1099px){
     .discgif{
       display: block;
-      scale: 230%;
+      scale: 400%;
       margin: 10px;
+      padding: 30px;
     }
   }
   .iconcontainer{
