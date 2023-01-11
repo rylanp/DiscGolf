@@ -1,6 +1,6 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    font-size: calc(16px+0.5vw);
+    font-size: calc(20px+0.5vw);
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #b0c9dd; /* Gray border */
@@ -28,7 +28,7 @@ button {
   
   /* Add a background color and some padding around the form */
   .container {
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #e2eef9;
     padding: 20px;
     width: 80%;
@@ -40,7 +40,7 @@ button {
     font-family: Arial, Verdana, sans-serif;
   }
   label {
-    font-size: calc(20px + 0.5vw);
+    font-size: calc(25px + 0.5vw);
   }
   #titletext {
     color: #ffffff;
