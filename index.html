@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Disc Golf Score Tracker</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
-    <link rel="stylesheet" href="discgolf.css"/>
-  </head>
-  <body>
-    <p id="titletext">Welcome to Disc Golf Score Tracker</p>
-    <div class="animatedscene">
-      <img class="discgif" src="https://piskel-imgstore-b.appspot.com/img/0614483a-911d-11ed-ac11-57c6c3bb75e1.gif">
-    </div>
-    <div class="container">
-      <form onsubmit="sendContact(); reset; return false;">
-    
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name..">
 
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="example@gmail.com">
-    
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Write something..." style="height:200px"></textarea>
-        <!--<input type="submit" value="Send Form">-->
-        <button type="submit">Submit</button>
-    
-      </form>
-      
+<head>
+  <meta charset="utf-8">
+  <title>Disc Golf Score Tracker</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <link rel="stylesheet" href="discgolf.css" />
+</head>
+
+<body>
+  <p id="titletext">Welcome to Disc Golf Score Tracker</p>
+  <div class="animatedscene">
+    <img class="discgif" src="https://piskel-imgstore-b.appspot.com/img/0614483a-911d-11ed-ac11-57c6c3bb75e1.gif">
+  </div>
+  <div class="container">
+    <form onsubmit="sendContact(); reset; return false;">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="example@gmail.com">
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Write something..." style="height:200px"></textarea>
+      <!--<input type="submit" value="Send Form">-->
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+  <div class="iconcontainer">
+    <a href="https://apps.apple.com/us/app/disc-golf-score-tracker/id1633893666" target="_blank"><img src="icon.png"
+        class="appicon"></a>
+    <div class="icontext">
+      <h1>Disc Golf Score Tracker<br><br></h1>
+      <h3>Check it out on the app store!<br><br>Click on the icon to download it</h3>
     </div>
-    <script src="discgolf.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-  </body>
-  
-</html> 
+  </div>
+  <script src="discgolf.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
