@@ -1,6 +1,6 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    font-size: 1.8vw;
+    font-size: calc(10px+1vw);
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #b0c9dd; /* Gray border */
@@ -31,13 +31,16 @@ button {
     border-radius: 5px;
     background-color: #e2eef9;
     padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 3vh;
   }
   body {
     background-color: #acdbff;
     font-family: Arial, Verdana, sans-serif;
   }
   label {
-    font-size: 1.8vw;
+    font-size: 1.2vw;
   }
   #titletext {
     color: #ffffff;
@@ -51,5 +54,8 @@ button {
     margin: auto;
     padding: 12px;
     border-radius: 20px;
+  }
+  .discgif {
+    width: 100%;
   }
 
