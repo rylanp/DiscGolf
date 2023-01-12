@@ -5,7 +5,7 @@
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  font-size: calc(20px+0.5vw);
+  font-size: 16px;
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #b0c9dd; /* Gray border */
@@ -33,44 +33,37 @@ scale: 105%;
 
 /* Add a background color and some padding around the form */
 .container {
-border-radius: 8px;
-background-color: #e2eef9;
-padding: 20px;
-width: 80%;
-margin: auto;
-margin-top: 3vh;
+  border-radius: 8px;
+  background-color: #e2eef9;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
 }
 body {
 background-color: #acdbff;
 font-family: Arial, Verdana, sans-serif;
 }
 label {
-font-size: calc(25px + 0.5vw);
+font-size: 25px;
 }
 #titletext {
-color: #ffffff;
-font-size: 5vw;
-font-weight: bolder;
-text-align: center;
+  width: 100%;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 30px 0 30px 0;
 }
 .animatedscene{
-background-color: rgba(0, 0, 0, 0.091);
-text-align: center;
-margin: auto;
-padding: 12px;
-border-radius: 20px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.091);
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
 }
 .discgif {
 width: 100%;
 
-}
-@media (max-width: 1099px){
-.discgif{
-  display: block;
-  scale: 200%;
-  margin: 10px;
-  padding: 5px;
-}
 }
 
 .wrapper {
@@ -95,7 +88,7 @@ width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  
+
 }
 
 
