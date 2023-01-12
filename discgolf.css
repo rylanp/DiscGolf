@@ -1,94 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    font-size: calc(20px+0.5vw);
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #b0c9dd; /* Gray border */
-    border-radius: 10px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  /* Style the submit button with a specific background color etc */
+  font-size: calc(20px+0.5vw);
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #b0c9dd; /* Gray border */
+  border-radius: 10px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
 button {
-    background-color: #0075cf;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  button:hover {
-    background-color: #0087ee;
-    scale: 105%;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 8px;
-    background-color: #e2eef9;
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    margin-top: 3vh;
-  }
-  body {
-    background-color: #acdbff;
-    font-family: Arial, Verdana, sans-serif;
-  }
-  label {
-    font-size: calc(25px + 0.5vw);
-  }
-  #titletext {
-    color: #ffffff;
-    font-size: 5vw;
-    font-weight: bolder;
-    text-align: center;
-  }
-  .animatedscene{
-    background-color: rgba(0, 0, 0, 0.091);
-    text-align: center;
-    margin: auto;
-    padding: 12px;
-    border-radius: 20px;
-  }
-  .discgif {
-    width: 100%;
+  background-color: #0075cf;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  }
-  @media (max-width: 1099px){
-    .discgif{
-      display: block;
-      scale: 200%;
-      margin: 10px;
-      padding: 5px;
-    }
-  }
-  .iconcontainer{
-    display: flex;
-    margin: 0 auto;
-    background-color: #5ab7ff67;
-    width: 90vw;
-    border-radius: 10px;
-    padding: 15px;
-    justify-content: center;
-  }
-  .appicon {
-    width: 30vw;
-    border-radius: 30%;
-    padding: 0 10vw 0 10vw ;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+/* When moving the mouse over the submit button, add a darker green color */
+button:hover {
+background-color: #0087ee;
+scale: 105%;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 8px;
+background-color: #e2eef9;
+padding: 20px;
+width: 80%;
+margin: auto;
+margin-top: 3vh;
+}
+body {
+background-color: #acdbff;
+font-family: Arial, Verdana, sans-serif;
+}
+label {
+font-size: calc(25px + 0.5vw);
+}
+#titletext {
+color: #ffffff;
+font-size: 5vw;
+font-weight: bolder;
+text-align: center;
+}
+.animatedscene{
+background-color: rgba(0, 0, 0, 0.091);
+text-align: center;
+margin: auto;
+padding: 12px;
+border-radius: 20px;
+}
+.discgif {
+width: 100%;
+
+}
+@media (max-width: 1099px){
+.discgif{
+  display: block;
+  scale: 200%;
+  margin: 10px;
+  padding: 5px;
+}
+}
+
+.wrapper {
+  width: 100%;
+}
+.img-info{
+  width: 100%;
+}
+.img-info h2 {
+  padding: 30px 30px 20px;
+  font-size: 50px;
+  line-height: 44px;
+}
+.img-info p {
+  padding: 0px 30px 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.img-icon {
+  width: 100%;
+  border-radius: 10%;
+}
+
+@media only screen and (min-width: 768px) {
   
-  .icontext{
-    font-size: 1.7vw;
-    width: 50vw;
-    color: #ffffff;
-    margin: auto;
-  }
+}
 
 
