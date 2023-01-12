@@ -136,6 +136,9 @@ font-size: 25px;
     float: right;
     padding: 20px 0px 50px 100px;
   }
+  .container{
+    width: 60%;
+  }
 }
 
 
