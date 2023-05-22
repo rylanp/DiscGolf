@@ -46,7 +46,7 @@ button:hover {
 }
 body {
 background-color: #acdbff;
-font-family: Arial, Verdana, sans-serif;
+font-family: 'Source Code Pro', monospace;
 }
 label {
 font-size: 25px;
@@ -54,7 +54,7 @@ font-size: 25px;
 #titletext {
   width: 70%;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
   text-align: center;
   padding: 30px 0 30px 0;
