@@ -1,0 +1,5 @@
+Feature Ideas
+1. Parallax scrolling
+2. Cool art
+3. Pick a theme: mountains, golf course, star wars, dojo, mom's basement, etc.
+4. 
