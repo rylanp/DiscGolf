@@ -1,6 +1,32 @@
+:root {
+  --background: #F9ECCC;
+  --navigationBackground: #222E50;
+  --title: #5B85AA;
+  --lightText: #98473E;
+  --darkText: #222E50;
+  --backgroundSection: #306B34;
+  --backgroundSection2: #8797AF;
+  --burgundy: #7B0D1E;
+  --purple: #5A246C;
+  --coral: #FF7477;
+}
 *{
   margin: 0;
   padding: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 3.4vw;
+  height: fit-content;
+}
+h2 {
+  text-align: center;
+  font-size: 1.8vw;
+  height: fit-content;
+}
+p {
+  font-size: 2vw;
+  height: fit-content;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -44,12 +70,17 @@ button:hover {
   width: 80%;
   margin: auto;
 }
+
 body {
-background-color: #acdbff;
-font-family: 'Source Code Pro', monospace;
+  background-color: #acdbff;
+  font-family: 'Varela Round', sans-serif;
+  height: 100vh;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
 }
 label {
-font-size: 25px;
+  font-size: 25px;
 }
 #titletext {
   width: 70%;
@@ -143,50 +174,65 @@ font-size: 25px;
     width: 60%;
   }
 }
-.menubar {
-  width: 100%;
-  padding: 5px 0px 20px 0px;
-  justify-content: center;
-  text-align: center;
+
+
+/*Navigation Bar---------------------------------------------*/
+.topnavigation {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--navigationBackground);
+  z-index: -100;
+  animation: NavigationBarSlideDown 0.9s ease-out 0s 1;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
-.menubarbtn {
-    display: inline-block;
-    width: 150px;
-    padding: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    background-color: rgb(120, 120, 124);
-    color: rgb(55, 63, 63);
-    
+/* Style the links inside the navigation bar */
+.topnavigation h1 {
+  flex: 0.5;
+  color: var(--title);
+  text-align: center;
+  padding: 0vh 0vh;
+  text-decoration: none;
+  font-size: 2vw;
+  animation: RPAnim 4s ease-in-out 0s infinite;
 }
-#selectedpage {
-    background-color: rgb(170, 170, 176);
+@keyframes RPAnim {
+  100%,0%{
+      color: var(--title);
+  }
+  50%{
+      color: var(--background);
+  }
 }
-.menubarbtn :hover{
-    color: rgb(216, 216, 224);
+.topnavigation a {
+  flex: 1;
+  color: var(--background);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5vw;
 }
-.menubarbtn a:link{
-    color: rgb(55, 63, 63);
-    text-decoration: none;
-    background-color: transparent;
+/* Change the color of links on hover */
+.topnavigation a:hover {
+  background-color: var(--lightText);
+  scale: 1.2;
+}
+.topnavigation #active {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
 
+/* Add a color to the active/current link */
+.topnavigation a.active {
+  background-color: var(--lightText);
 }
-.menubarbtn a:visited {
-    color: rgb(55, 63, 63);
-    background-color: transparent;
-    text-decoration: none;
+@keyframes NavigationBarSlideDown {
+  0%{
+      transform: translate(-120vw,0);
+  }
+  100%{
+      transform: translate(0,0);
+  }
 }
-.menubarbtn a:hover {
-    color: rgb(55, 63, 63);
-    background-color: transparent;
-    text-decoration: none;
-}
-.menubarbtn a:active {
-    color: rgb(55, 63, 63);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-
+/*Navigation Bar---------------------------------------------*/
