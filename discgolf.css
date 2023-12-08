@@ -185,15 +185,13 @@ label {
   background-color: var(--navigationBackground);
   z-index: -100;
   animation: NavigationBarSlideDown 0.9s ease-out 0s 1;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 /* Style the links inside the navigation bar */
 .topnavigation h1 {
   flex: 0.5;
   color: var(--title);
   text-align: center;
-  padding: 0vh 0vh;
+  padding: 0 0;
   text-decoration: none;
   font-size: 2vw;
   animation: RPAnim 4s ease-in-out 0s infinite;
@@ -212,6 +210,7 @@ label {
   text-align: center;
   text-decoration: none;
   font-size: 1.5vw;
+  padding: 1.4% 0% 1.4% 0%;
 }
 /* Change the color of links on hover */
 .topnavigation a:hover {
